@@ -20,15 +20,6 @@ Esta landing page foi desenvolvida como parte do meu portfólio para apresentar 
 * CSS
 * Netlify
 
-**Demonstração:**
-
-[Inserir link para a sua landing page]
-
-**Como visualizar:**
-
-1. Clone este repositório: `git clone https://github.com/seu-usuario/seu-repositorio.git`
-2. Abra o arquivo `index.html` em seu navegador.
-
 **Contribuições:**
 
 Contribuições são bem-vindas! Abra um issue para reportar problemas ou sugestões.
