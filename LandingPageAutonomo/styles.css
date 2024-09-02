@@ -129,55 +129,53 @@ nav ul li a:hover {
     font-weight: 600;
 }
 
-#project h3 {
-    margin-left: 300px;
-    margin-right: 300px;
+#project h4 {
+    margin-top: 20px;
+    margin-left: 450px;
+    margin-right: 450px;
     text-align: center;
-    margin-bottom: 10px;
     font-size: 18px;
     font-weight: 600;
 }
 
-#project h4 {
+#project h3 {
+    margin-top: 10px;
     text-align: center;
     margin-bottom: 10px;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 600;
+    color: #024347;
 }
 
 #project p {
     text-align: center;
     margin-bottom: 10px;
     font-size: 18px;
-    font-weight: 480;
+    font-weight: 490;
 }
 
 .project-gallery {
-    margin-left: 150px;
-    margin-right: 150px;
-    margin-top: 20px;
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-around;
+    flex-direction: column; /* Faz com que os itens fiquem um abaixo do outro */
+    align-items: center; /* Centraliza os itens na tela */
+    padding: 20px;
 }
 
 .project-item {
-
-    background: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    width: calc(33.333% - 40px);
-    text-align: center;
-    font-weight: 480;
+    width: 65%; /* Define uma largura máxima para as imagens */
+    margin-bottom: 20px; /* Espaçamento entre as imagens */
+    background: none;
+    padding: 0;
 }
 
 .project-item img {
-    max-width: 100%;
+    width: 100%; /* A imagem ocupa 100% da largura do contêiner .project-item */
     height: auto;
-    border-radius: 5px;
-    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 
 /* Sobre mim*/
 #about {
@@ -248,6 +246,63 @@ form {
     margin: 0 auto;
     background: #fff;
 }
+
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: inherit;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #027EBC;
+    background-color: #fff;
+    outline: none;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #027EBC;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #016c74;
+}
+
 
 @media only screen and (max-width: 768px) {
     header .logo h1 {
