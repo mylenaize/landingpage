@@ -149,7 +149,7 @@ nav ul li a:hover {
     text-align: center;
     margin-bottom: 10px;
     font-size: 18px;
-    font-weight: 480; /* Semi-bold */
+    font-weight: 480;
 }
 
 .project-gallery {
@@ -247,4 +247,74 @@ form {
     max-width: 600px;
     margin: 0 auto;
     background: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+    header .logo h1 {
+        font-size: 20px;
+    }
+
+    #chamada h2 {
+        font-size: 28px;
+    }
+
+    #chamada h3 {
+        font-size: 20px;
+    }
+
+    #benefits h2, 
+    #project h2, 
+    #about h2, 
+    #contact h2 {
+        font-size: 24px;
+    }
+
+    #project h3 {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #about h3, 
+    .benefit-item h3 {
+        font-size: 18px;
+    }
+
+    #project p, 
+    #about p, 
+    .benefit-item, 
+    #contact p {
+        font-size: 16px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .benefits-container, 
+    .project-gallery {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .benefit-item, 
+    .project-item {
+        width: 100%;
+    }
+
+    .project-item img {
+        width: 100%;
+    }
+
+    #chamada {
+        padding: 30px 10px;
+        background-size: cover;
+    }
+
+    #benefits, 
+    #about, 
+    #project, 
+    #contact {
+        padding: 30px 10px;
+    }
+
+    header .menu-icon {
+        font-size: 28px;
+        padding: 10px;
+    }
 }
