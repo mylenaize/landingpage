@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytic Mind Sphere</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body> 
+
+    <!-- ============ SEÇÃO: HOME ============ -->
+    <section id="home">
+        <header>
+            <h1>Analytic Mind Sphere</h1>
+            <h2>Bem-vindo(a) ao meu portfólio!</h2>
+        </header>
+        <div class="home-content">
+            <div class="text-overlay">
+                <p id="presentation">Oi, meu nome é Mylena! <br><br>Essa landing page nasceu em um trabalho de faculdade, e expandi ele com todas as técnicas que aprendi, afim de mostrar como transformo dados brutos em insights que fazem diferença. Aqui você encontrará exemplos do meu trabalho com SQL, Python e Power BI, ferramentas que utilizo para organizar informações complexas, identificar padrões e apoiar decisões mais inteligentes. Navegue pelo portfólio e veja como posso contribuir para que os dados trabalhem a seu favor.</p>
+                <button id="explorar">Explorar Portfólio</button>
+                <button id="contato">Entrar em Contato</button>
+            </div>
+        </div>
+    </section>    
+
+    <!-- ============ SEÇÃO: SOBRE O PROJETO ============ -->
+    <section id="about">
+        <h1>ReadyToWear</h1>
+        <h4>Uma empresa e-commerce fictícia focada em atender clientes com rapidez e qualidade.</h4>
+        <p>
+            A ReadyToWear opera tanto online quanto em lojas físicas distribuídas pelo Brasil. A ideia deste projeto é simular cenários reais de negócios, observando métricas por região e buscando insights que melhorem a experiência do cliente, eficiência operacional e tomada de decisão estratégica.
+        </p>
+        <img src="imagens/mapabrasil.png" alt="Estrutura Regional da Empresa">
+    </section>
+
+    <!-- ============ SEÇÃO: FERRAMENTAS ============ -->
+<section id="tools">
+    <h2>Minhas Ferramentas de Trabalho</h2>
+    <ul>
+        <li><strong>Power BI</strong>
+            <ul>
+                <li><strong2>Modelagem & Performance</strong2>Estruturo modelos dimensionais (Star Schema, Snowflake), aplico query folding sempre que possível, otimizo medidas DAX complexas e uso aggregations tables para garantir dashboards rápidos mesmo com grandes volumes de dados.</li>
+                <li><strong2>UX & Usabilidade</strong2>Projeto layouts e navegação centrados no usuário, aplico hierarquias, tooltips informativos, bookmarks e drill-throughs, garantindo dashboards claros, responsivos e que facilitam decisões rápidas sem sobrecarga cognitiva.</li>
+                <li><strong2>Integração & Automação</strong2>Conecto múltiplas fontes (APIs, web scraping, SQL, Excel), gerencio dataflows, gateways e atualizações incrementais e monitoramento de performance para manter dados sempre atualizados e confiáveis.</li>
+            </ul>
+        </li>
+
+        <li><strong>SQL</strong>
+            <ul>
+                <li><strong2>Consultas performáticas</strong2>Escrevo queries eficientes usando filtros antes de joins e agregações otimizadas, garantindo extração rápida mesmo com grandes volumes de dados.</li>
+                <li><strong2>Preparação de dados</strong2>Faço limpeza, padronização e transformação de dados dentro do SQL (normalização, tratamento de nulos e tipos) para que estejam prontos para análise sem sobrecarregar ferramentas de BI.</li>
+                <li><strong2>Automação de rotinas</strong2>Crio views, stored procedures e rotinas agendadas que padronizam processos de extração e transformação, facilitando integração com dashboards e fluxos de análise.</li>
+            </ul>
+        </li>
+
+        <li><strong>Python</strong>
+            <ul>
+                <li><strong2>Data wrangling & tratamento</strong2> Uso Pandas e NumPy para limpeza, transformação e análise de dados tabulares e bases complexas, aplicando operações vetorizadas para eficiência.</li>
+                <li><strong2>Automação & extração</strong2> Scripts para ingestão de dados via APIs, SharePoint (Office365-REST-Python-Client), web scraping com Requests, BeautifulSoup e Selenium, incluindo logins e interação com formulários.</li>
+                <li><strong2>Análise preditiva</strong2> Desenvolvimento de modelos com Scikit-learn e análises estatísticas com Statsmodels, cuidando de validação cruzada e interpretabilidade (feature importance, métricas) para decisões seguras.</li>
+            </ul>
+        </li>
+    </ul>
+</section>
+
+    <!-- ============ SEÇÃO: RELATÓRIO DE BI ============ -->
+    <section id="report">
+        <h2>Explorando meu portfólio</h2>
+        <p>
+            Aqui você pode navegar por indicadores e métricas que mostram como os dados podem orientar decisões. Cada visualização foi pensada para facilitar a interpretação, destacando tendências, oportunidades e pontos de atenção de forma clara e objetiva.
+        </p>
+        <button id="ver-relatorio">Veja o Relatório Interativo Publicado (Power BI Service)</button>
+    </section>
+
+    <!-- ============ SEÇÃO: PÁGINAS DO RELATÓRIO ============ -->
+    <section id="report-pages">
+
+        <!-- Título e Descrição da Página -->
+        <div id="page-details">
+            <h3 id="page-title">Homepage</h3>
+            <p id="page-description">Uma visão panorâmica do relatório, permitindo explorar dados mês a mês e identificar rapidamente padrões e tendências.</p>
+        </div>
+
+        <div class="swipe-container">
+            <!-- Setas Laterais -->
+            <div class="arrow left">
+                <img src="imagens/seta-esquerda.png" alt="Seta Esquerda">
+            </div>
+
+            <!-- Container das Páginas -->
+            <div class="report-page active" data-title="Homepage" data-description="Uma visão geral com filtro dinâmico por mês para todo o relatório.">
+                <img src="imagens/homepage.png" alt="Homepage">
+            </div>
+            <div class="report-page" data-title="Sales Overview" data-description="Panorama das vendas: faturamento, volume vendido e comparativos entre regiões.">
+                <img src="imagens/sales-overview.png" alt="Sales Overview">
+            </div>
+            <div class="report-page" data-title="Sales Ranking" data-description="Ranking de produtos e regiões com melhor desempenho.">
+                <img src="imagens/sales-ranking.png" alt="Sales Ranking">
+            </div>
+            <div class="report-page" data-title="Predictive Analysis" data-description="Previsões de vendas com base em tendências históricas.">
+                <img src="imagens/predictive-analysis.png" alt="Predictive Analysis">
+            </div>
+            <div class="report-page" data-title="RFM Analysis" data-description="Segmentação de clientes com base em Recência, Frequência e Valor Monetário.">
+                <img src="imagens/rfm-analysis.png" alt="RFM Analysis">
+            </div>
+            <div class="report-page" data-title="OTIF" data-description="Métrica 'On Time In Full': análise de pontualidade e completude nas entregas.">
+                <img src="imagens/otif.png" alt="OTIF">
+            </div>
+
+            <div class="arrow right">
+                <img src="imagens/seta-direita.png" alt="Seta Direita">
+            </div>
+        </div>
+
+        <!-- Indicadores de Progresso -->
+        <div class="progress-indicators">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+
+    <!-- ============ SEÇÃO: CONTATO ============ -->
+    <section id="contact">
+        <h2>Vamos Trabalhar Juntos?</h2>
+        <p>Gosto de dar forma, cor e propósito aos dados. Se o objetivo é dar vida aos dados com clareza, estratégia e um design agradável de explorar, será um prazer conversar por e-mail ou LinkedIn.</p>
+        <div class="contact-links">
+            <a href="https://www.linkedin.com/in/mylena-torrez" target="_blank">LinkedIn</a>
+            <a href="mailto:mylena.torrez@outlook.com">Email Profissional</a>
+        </div>
+
+        <!-- Formulário de Contato -->
+        <!-- <form action="https://formsubmit.co/mylena.torrez@outlook.com" method="POST">
+            <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
+            <input type="hidden" name="_captcha" value="false">
+
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form> -->
+
+    </section>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

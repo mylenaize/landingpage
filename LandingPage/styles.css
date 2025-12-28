@@ -1,0 +1,379 @@
+/* ================= RESET BÁSICO ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+}
+
+body {
+    color: #ffffff;
+    line-height: 1.6;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+    font-size: 16px;
+}
+
+/* ================= SEÇÕES ================= */
+section {
+    padding: 40px 200px;
+    margin: auto;
+}
+
+/* ================= FUNDOS ================= */
+#home { background-color: #093036; }
+#about { background-color: #002c33; }
+#tools { background-color: #0E4D57; }
+#report { background-color: #12616E; }
+#report-pages { background-color: #146F7D; }
+#contact { background-color: #1A7F8D; }
+
+/* ================= TÍTULOS ================= */
+h1, h2, h3, p, button, a, input, textarea, li {
+    font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+}
+
+h1 {
+    color: #4feaff;
+    margin-bottom: 5px;
+    font-size: 1.8rem; /* ~35px */
+    font-weight: 700;
+}
+
+h2 {
+    color: #70e1f0;
+    margin-bottom: 5px;
+    font-size: 1.6rem; /* ~29px */
+    font-weight: 600;
+}
+
+h3 {
+    color: #91f2ff;
+    margin-bottom: 5px;
+    font-size: 1.5rem; /* ~22px */
+    font-weight: 600;
+}
+
+h4 {
+    color: #91f2ff;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    font-size: 1.3rem; /* ~22px */
+    font-weight: 500;
+}
+
+#page-description {
+    color: #a3e8fd;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+#report-descripition {
+    color: #c7f7ff;
+    font-size: 1.2rem;
+}
+
+/* ================= TEXTOS ================= */
+p {
+    margin-bottom: 18px;
+    font-size: 1.1rem; /* ~16px */
+    color: #ffffff;
+    padding: 5px;
+    margin-inline: 13%;
+    font-weight: 400;
+}
+
+/* ================= BOTÕES ================= */
+button, form button, .contact-links a {
+    font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+}
+
+button {
+    background-color: #1cc5db;
+    border: none;
+    padding: 8px 25px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 10px auto;
+    transition: background 0.3s;
+    display: inline-block;
+    border-radius: 6px;
+}
+
+button:hover {
+    background-color: #007b99;
+}
+
+/* ================= IMAGENS ================= */
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* ================= SEÇÃO HOME ================= */
+#home {
+    background-image: url('imagens/BACKGROUND2.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+#home header {
+    width: 120%;
+    padding: 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+}
+
+.home-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-overlay {
+    position: relative;
+    padding: 40px;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#presentation {
+    color: rgb(155, 235, 255);
+    font-size: 1.1rem;
+    margin-inline: 450px;
+}
+
+@media (max-width: 768px) {
+    .text-overlay { max-width: 90%; padding: 20px; }
+    button { padding: 10px 20px; }
+    section { padding: 40px 30px; }
+    #presentation { margin-inline: 0; font-size: 1rem; }
+}
+
+/* ================= SEÇÃO TOOLS ================= */
+#tools {
+    color: #fff;
+    padding: 2rem;
+}
+
+#tools h2 {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 1.3rem;
+    color: #00d9ff;
+}
+
+#tools ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+#tools li {
+    background-color: #011a1d;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgb(0, 0, 0);
+    padding: 1.5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+#tools li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 2);
+    background-color: #03323d;
+}
+
+#tools li strong {
+    display: block;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #00d9ff;
+    text-align: center;
+}
+
+#tools li strong2 {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #00d9ff;
+    text-align: center;
+}
+
+#tools li ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#tools li ul li {
+    padding: 0.5rem 0;
+    border-left: 4px solid #00d9ff;
+    padding-left: 1rem;
+    font-size: 1rem;
+    color: #bbb;
+}
+
+@media (max-width: 600px) {
+    #tools ul { grid-template-columns: 1fr; }
+    #tools li { padding: 1rem; }
+}
+
+/* ================= SEÇÃO REPORT ================= */
+#report img { border-radius: 10px; }
+
+/* ================= SEÇÃO REPORT-PAGES ================= */
+#report-pages { text-align: center; color: #fff; }
+
+.swipe-container {
+    position: relative;
+    margin: auto;
+    max-width: 90%;
+    height: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 0 60px;
+}
+
+.report-page { display: none; width: 100%; height: 100%; }
+.report-page.active { display: block; }
+
+.report-page img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 70px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.arrow.left { left: 0; }
+.arrow.right { right: 0; }
+
+.progress-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    background-color: #555;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active { background-color: #42a1ad; }
+
+/* ================= SEÇÃO CONTACT ================= */
+#contact {
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+    font-size: 1.4rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-inline: 450px;
+}
+
+/* ================= FORMULÁRIO ================= */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: rgba(13, 57, 68, 0.562);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form input, form textarea {
+    padding: 12px;
+    border: 1px solid #0093ad;
+    border-radius: 8px;
+    background-color: #d3d3d3;
+    color: #333;
+    width: 100%;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #007396;
+    outline: none;
+}
+
+form button {
+    padding: 12px 30px;
+    border: none;
+    background-color: #008c96;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover { background-color: #006779; }
+
+/* ================= LINKS DE CONTATO ================= */
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+.contact-links a {
+    color: #d3f6ff;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 8px 20px;
+    background-color: #035463;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.contact-links a:hover { background-color: #abcdd3; color: rgb(0, 77, 90); }
+.contact-links a:focus { outline: none; box-shadow: 0 0 5px rgba(0, 115, 150, 0.6); }
