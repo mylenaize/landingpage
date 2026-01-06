@@ -1,22 +1,30 @@
-## Landing Page Pessoal - Serviços de Análise de Dados
+## Landing Page Pessoal — Serviços de Análise de Dados
 
-Link de acesso ao site hospedado pela Netlify:
+**Link de acesso ao site (Netlify):**  
 https://analyticmindsphere.netlify.app/
 
-**Descrição:**
-Esta landing page foi desenvolvida como parte do meu portfólio para apresentar meus serviços como Analista de Dados.
+### Descrição
+Landing page desenvolvida como parte do meu portfólio profissional para apresentar meus serviços como Analista de Dados.  
+O projeto foi construído com foco em organização da informação, interatividade e responsividade, proporcionando uma navegação clara e fluida para o usuário.
 
-**Funcionalidades:**
-* Apresentação dos serviços de análise de dados
-* Portfólio de projetos desenvolvidos no Power BI
-* Design responsivo para visualização em diferentes dispositivos
+### Funcionalidades
+- Apresentação dos serviços de análise de dados  
+- Portfólio de projetos desenvolvidos no Power BI  
+- Navegação interativa entre seções da página  
+- Interatividade com botões e setas de navegação  
+- Atualização dinâmica de conteúdos na interface  
+- Rolagem suave para seções específicas  
+- Design responsivo para diferentes dispositivos  
 
-**Tecnologias:**
-* HTML
-* CSS
-* Node.js
+### Tecnologias Utilizadas
+- HTML5  
+- CSS3  
+- JavaScript (Vanilla / Front-end)  
+- Netlify (hospedagem e deploy)
 
-Contribuições são bem-vindas!
+### Contribuições
+Contribuições, sugestões e melhorias são bem-vindas.
 
-**Autor:**
-Mylena Torres - Analista de Dados
+### Autora
+**Mylena Torres**  
+Analista de Dados
