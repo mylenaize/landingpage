@@ -4,26 +4,19 @@ Link de acesso ao site hospedado pela Netlify:
 https://analyticmindsphere.netlify.app/
 
 **Descrição:**
-
-Esta landing page foi desenvolvida como parte do meu portfólio para apresentar meus serviços como Analista de Dados. A página apresenta meus projetos, habilidades e um formulário de contato para que potenciais clientes possam entrar em contato.
+Esta landing page foi desenvolvida como parte do meu portfólio para apresentar meus serviços como Analista de Dados.
 
 **Funcionalidades:**
-
 * Apresentação dos serviços de análise de dados
 * Portfólio de projetos desenvolvidos no Power BI
-* Formulário de contato
 * Design responsivo para visualização em diferentes dispositivos
 
 **Tecnologias:**
-
 * HTML
 * CSS
-* Netlify
+* Node.js
 
-**Contribuições:**
-
-Contribuições são bem-vindas! Abra um issue para reportar problemas ou sugestões.
+Contribuições são bem-vindas!
 
 **Autor:**
-
 Mylena Torres - Analista de Dados
